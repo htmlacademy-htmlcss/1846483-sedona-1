@@ -39,8 +39,109 @@
       </nav>
     </header>
 
-    <main>
+    <main class="page-main">
+      <h1>Гостиницы Седоны</h1>
 
+      <article class="breadcrumbs">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+
+        <ol class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <h3 class="visually-hidden">Главная</h3>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>          
+        </ol>
+      </article>
+
+      <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="infrastructure-filter">
+            <legend class="filter-title">Инфраструктура:</legend>
+
+            <ul class="infrastructure-filter-list">
+              <li class="infrastructure-filter-item">
+                <label for="swimming-pool">Бассейн</label>
+                <input class="infrastructure-checkbox" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label for="parking-space">Парковка</label>
+                <input class="infrastructure-checkbox" type="checkbox" name="parking-space" id="parking-space" checked>
+              </li>
+              <li class="infrastructure-filter-item">
+                <label for="wi-fi">Wi-Fi</label>
+                <input class="infrastructure-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="type-of-housing-filter">
+            <legend class="filter-title">Тип жилья:</legend>
+
+            <ul class="type-of-housing-filter-list">
+              <li class="type-of-housing-filter-item">
+                <label for="hotel">Гостиница</label>
+                <input class="type-of-housing-radio" type="radio" name="type-of-housing" id="hotel" value="hotel" checked>
+              </li>
+              <li class="type-of-housing-filter-item">
+                <label for="motel">Мотель</label>
+                <input class="type-of-housing-radio" type="radio" name="type-of-housing" id="motel" value="motel">
+              </li>
+              <li class="type-of-housing-filter-item">
+                <label for="apartments">Апартаменты</label>
+                <input class="type-of-housing-radio" type="radio" name="type-of-housing" id="apartments" value="apartments">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="price-filter">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            
+            <label class="price-filter-placeholder" for="price-from">от</label>
+            <input class="price-filter-input" type="number" name="price-from" id="price-from" min="0">
+
+            <label class="price-filter-placeholder" for="price-up-to">до</label>
+            <input class="price-filter-input" type="number" name="price-up-to" id="price-up-to" max="9000">
+
+            <input class="price-filter-range" type="range" min="0" max="9000" step="1" value="50">
+          </fieldset>
+
+
+          <button type="submit">ПРИМЕНИТЬ</button>
+          <button type="reset">СБРОСИТЬ</button>
+        </form>
+      </section>
+
+      <section class="catalog-sorting">
+        <h2 class="visually-hidden">Сортировка гостиниц</h2>
+
+        <p class="sorting-output">НАЙДЕНО ГОСТИНИЦ: <span class="sorting-output-count">38</span></p>
+
+        <select>
+          <option>Сначала дешевые</option>
+        </select>
+        
+      </section>
+
+
+
+
+      <article class="subscribe">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-form-input-email">Поле для ввода e-mail</label>
+          <input class="subscribe-form-input" id="subscribe-form-input-email" type="email" placeholder="Ваш e-mail" name="email" autocomplete="email" required>
+          <button class="subscribe-form-submit-button" type="submit">ПОДПИСАТЬСЯ</button>
+        </form>
+      </article>
     </main>
 
     <footer class="page-footer">
