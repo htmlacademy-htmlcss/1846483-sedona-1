@@ -9,7 +9,6 @@
       <a class="header-logo-link">
         <img class="header-logo" src="#" alt="Логотип">
       </a>
-
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -33,7 +32,7 @@
             <a class="user-menu-link favorites-icon" href="#"></a>
           </li>
           <li class="user-menu-item">
-            <a class="user-menu-link user-menu-button" href="#">ХОЧУ СЮДА!</a>
+            <a class="user-menu-link user-menu-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -41,18 +40,17 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-
-      <section class="main-hero">
+      <section class="hero">
         <h2 class="visually-hidden">О Седоне</h2>
         <img class="hero-welcome" src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
-        <img class="hero-background" src="#" alt="Удивительный пейзаж гор">
+        <span class="visually-hidden">Удивительный пейзаж гор</span>
+        <span class="hero-background"></span>
       </section>
 
-      <section class="main-advantages">
+      <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="advantages-title">Настоящий городок</h3>
@@ -79,11 +77,10 @@
         </ul>
       </section>
 
-      <section class="main-comfort">
+      <section class="comfort">
         <h2 class="visually-hidden">Комфорт</h2>
         <p class="main-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="main-description">Опытный персонал и качественное обслуживание!</p>
-
         <ul class="comfort-list">
           <li class="comfort-item">
             <h3 class="comfort-title">Жильё</h3>
@@ -100,54 +97,45 @@
         </ul>
       </section>
 
-      <section class="main-search">
+      <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-
         <p class="main-title">Заинтересовались?</p>
         <p class="main-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
-        <a class="search-link" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
-      <article class="subscribe">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-form-input-email">Поле для ввода e-mail</label>
           <input class="subscribe-form-input" id="subscribe-form-input-email" type="email" placeholder="Ваш e-mail" name="email" autocomplete="email" required>
-          <button class="subscribe-form-submit-button" type="submit">ПОДПИСАТЬСЯ</button>
+          <button class="subscribe-form-submit-button" type="submit">Подписаться</button>
         </form>
-      </article>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <h2 class="visually-hidden">Наши контакты</h2>
-
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-            <h3 class="visually-hidden">Мы в контакте</h3>
+            <span class="visually-hidden">Мы в VK</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link social-telegram" href="https://t.me/htmlacademy">
-            <h3 class="visually-hidden">Мы в телеграме</h3>
+            <span class="visually-hidden">Мы в Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <h3 class="visually-hidden">Мы в ютьюбе</h3>
+            <span class="visually-hidden">Мы в YouTube</span>
           </a>
         </li>
       </ul>
-
-      <h3 class="visually-hidden">Наш номер телефона</h3>
       <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
-      <h3 class="visually-hidden">Сайт разработчика</h3>
       <a class="developer-link" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Сайт разработчика</span>
         <img src="#" alt="html academy">
       </a>
     </footer>
