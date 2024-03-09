@@ -31,10 +31,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
-  vertical-align: top;
   color: #000000;
-  background-color: inherit;
   text-decoration: none;
 }
 
@@ -42,8 +39,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -60,33 +55,19 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
-  vertical-align: top;
   color: #000000;
-  background-color: inherit;
   text-transform: uppercase;
 }
 
 .main-description {
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
-  vertical-align: top;
 }
 
 .advantages-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
-  vertical-align: top;
   text-transform: uppercase;
-}
-
-.advantages-description {
-  text-align: center;
-  vertical-align: top;
 }
 
 .advantages-item-image {
@@ -112,26 +93,16 @@ body {
 }
 
 .comfort-title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
-  vertical-align: top;
   color: #000000;
   text-transform: uppercase;
-}
-
-.comfort-description {
-  text-align: center;
-  vertical-align: top;
 }
 
 .search-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #756157;
   text-decoration: none;
@@ -139,8 +110,6 @@ body {
 }
 
 .subscribe-background-image {
-  width: 1200px;
-  height: 414.86px;
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -162,8 +131,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -173,8 +140,6 @@ body {
 .phone-link {
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
-  vertical-align: top;
   color: #000000;
   text-decoration: none;
 }
@@ -187,20 +152,15 @@ body {
   background-color: #000000;
 }
 
-.catalog-filter
-h1 {
+.catalog-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  text-align: left;
-  vertical-align: top;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
-  text-align: left;
-  vertical-align: top;
   text-decoration: none;
 }
 
@@ -208,22 +168,16 @@ h1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
-  vertical-align: top;
 }
 
 .filter-item {
   line-height: 23px;
-  text-align: left;
-  vertical-align: top;
 }
 
 .filter-form-button-submit {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -234,8 +188,6 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #000000;
   text-transform: uppercase;
@@ -246,18 +198,12 @@ h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: left;
-  vertical-align: top;
   color: #000000;
 }
 
-.catalog-item
-h3 {
-  font-weight: 700;
+.catalog-item-title {
   font-size: 24px;
   line-height: 28px;
-  text-align: left;
-  vertical-align: top;
   color: #000000;
 }
 
@@ -265,8 +211,6 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #756157;
   text-transform: uppercase;
@@ -277,8 +221,6 @@ h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -288,8 +230,6 @@ h3 {
 .catalog-item-rating {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #F2F2F2;
 }
@@ -298,8 +238,6 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   background-color: #82B3D3;
   border: none;
