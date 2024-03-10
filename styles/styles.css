@@ -31,11 +31,35 @@ body {
   background-color: #ffffff;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .list-reset {
   list-style-type: none;
 }
 
 .main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  display: flex;
+}
+
+.page-wrapper {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.header-logo-link {
+  margin-right: 28px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
   flex-grow: 1;
 }
 
