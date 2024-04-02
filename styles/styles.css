@@ -162,13 +162,15 @@ body {
 }
 
 .advantages-wrapper {
-  max-width: 400px;
-  max-height: 385px;
+  padding: 102px 85px;
 }
 
 .advantages-container {
   max-width: 230px;
-  padding: 102px 85px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 }
 
@@ -181,9 +183,15 @@ body {
 }
 
 .advantages-title {
+  margin: 0;
+  padding: 0 27px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-description {
+  margin: 0;
 }
 
 .advantages-item-image {
@@ -233,12 +241,10 @@ body {
 }
 
 .comfort-item {
-  max-width: 400px;
-  max-height: 385px;
+  padding: 81px 85px;
 }
 
 .comfort-container {
-  padding: 81px 85px;
   max-width: 230px;
   text-align: center;
 }
@@ -286,14 +292,10 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
+  padding: 96px 258px 104px;
 }
 
 .subscribe {
-  margin-top: 60px;
-}
-
-.subscribe-wrapper {
-  max-width: 684px;
   padding: 96px 258px 104px;
 }
 
@@ -322,7 +324,6 @@ body {
 .subscribe-form {
   display: flex;
   margin-top: 54px;
-  max-height: 52px;
 }
 
 .subscribe-form-input {
@@ -358,6 +359,10 @@ body {
 }
 
 .catalog-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 35px 70px 70px;
   background-image: url(../images/background/filter-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -367,33 +372,33 @@ body {
 
 .catalog-filter-form-wrapper {
   display: flex;
-  padding: 35px 70px 70px;
 }
 
 .catalog-title {
   margin: 0;
-  padding-top: 35px;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs-list {
   display: flex;
+  align-items: center;
+  gap: 10px;
   margin: 0;
   margin-top: 8px;
   padding: 0;
-}
-
-.breadcrumbs-item {
-  display: block;
-  min-width: 12px;
-  min-height: 12px;
 }
 
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.breadcrumbs-item-home {
+  display: block;
+  min-width: 12px;
+  min-height: 12px;
 }
 
 .filter-title {
@@ -404,6 +409,12 @@ body {
 
 .filter-item {
   line-height: 23px;
+}
+
+.infrastructure-filter-list,
+.type-of-housing-filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .filter-form-button-submit {
@@ -434,18 +445,20 @@ body {
 }
 
 .buttons-container {
-  min-height: 104px;
   display: flex;
+  gap: 32px;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.catalog-sorting {
-  min-height: 49px;
+.catalog-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 70px 60px;
 }
 
 .catalog-sorting-wrapper {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -481,10 +494,6 @@ body {
 .catalog-view-by-item {
   min-height: 48px;
   min-width: 48px;
-}
-
-.catalog {
-  margin-top: 40px;
 }
 
 .catalog-list {
@@ -556,7 +565,6 @@ p {
   line-height: 20px;
   color: #ffffff;
   background-color: #7DB54F;
-  ;
   text-transform: uppercase;
   border: none;
 }
@@ -569,10 +577,6 @@ p {
   background-color: #F2F2F2;
 }
 
-.catalog-pagination {
-  margin-top: 40px;
-}
-
 .pagination-list {
   padding: 0;
   margin: 0;
@@ -583,7 +587,6 @@ p {
 
 .pagination-item {
   display: flex;
-
 }
 
 .pagination-item-between-page {
