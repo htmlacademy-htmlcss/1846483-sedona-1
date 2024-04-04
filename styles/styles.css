@@ -31,13 +31,6 @@ body {
   background-color: #ffffff;
 }
 
-input,
-select,
-option,
-button {
-  font-family: inherit;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -333,6 +326,11 @@ button {
   margin-top: 54px;
 }
 
+.subscribe-form input,
+.subscribe-form button {
+  font-family: inherit;
+}
+
 .subscribe-form-input {
   flex-grow: 1;
   padding: 14px 20px;
@@ -458,6 +456,10 @@ button {
   justify-content: space-between;
 }
 
+.buttons-container button {
+  font-family: inherit;
+}
+
 .catalog-wrapper {
   display: flex;
   flex-direction: column;
@@ -486,7 +488,12 @@ button {
 .catalog-sort-by-list {
   min-height: 49px;
   min-width: 292px;
+  font-family: inherit;
   padding: 14px 20px;
+}
+
+.catalog-sort-by-item {
+  font-family: inherit;
 }
 
 .catalog-view-by-list {
@@ -546,6 +553,10 @@ p {
   gap: 16px 20px;
 }
 
+.catalog-item-wrapper button {
+  font-family: inherit;
+}
+
 .catalog-item-price-from {
   justify-self: end;
 }
@@ -603,6 +614,10 @@ p {
 
 .pagination-item {
   display: flex;
+}
+
+.pagination-item button {
+  font-family: inherit;
 }
 
 .pagination-item-between-page {
