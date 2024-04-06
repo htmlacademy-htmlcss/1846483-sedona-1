@@ -326,6 +326,11 @@ body {
   margin-top: 54px;
 }
 
+.subscribe-form input,
+.subscribe-form button {
+  font-family: inherit;
+}
+
 .subscribe-form-input {
   flex-grow: 1;
   padding: 14px 20px;
@@ -451,6 +456,10 @@ body {
   justify-content: space-between;
 }
 
+.buttons-container button {
+  font-family: inherit;
+}
+
 .catalog-wrapper {
   display: flex;
   flex-direction: column;
@@ -479,7 +488,12 @@ body {
 .catalog-sort-by-list {
   min-height: 49px;
   min-width: 292px;
+  font-family: inherit;
   padding: 14px 20px;
+}
+
+.catalog-sort-by-item {
+  font-family: inherit;
 }
 
 .catalog-view-by-list {
@@ -499,8 +513,8 @@ body {
 .catalog-list {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
 }
 
@@ -519,7 +533,10 @@ p {
 }
 
 .catalog-item-image{
+  width: 100%;
+  max-height: 212px;
   order: -1;
+  object-fit: contain;
 }
 
 .catalog-item-title {
@@ -530,8 +547,18 @@ p {
 }
 
 .catalog-item-wrapper {
-  display: flex;
-  justify-content: space-between;
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+}
+
+.catalog-item-wrapper button {
+  font-family: inherit;
+}
+
+.catalog-item-price-from {
+  justify-self: end;
 }
 
 .catalog-item-link {
@@ -559,7 +586,7 @@ p {
 
 .catalog-item-remove-favorites {
   margin: 0;
-  padding: 8px 20px;
+  padding: 8px 18px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -587,6 +614,10 @@ p {
 
 .pagination-item {
   display: flex;
+}
+
+.pagination-item button {
+  font-family: inherit;
 }
 
 .pagination-item-between-page {
