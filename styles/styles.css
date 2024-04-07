@@ -91,6 +91,10 @@ body {
   text-decoration: none;
 }
 
+.navigation-link-active {
+  border-bottom: 2px solid #756257;
+}
+
 .user-menu-list {
   display: flex;
   align-items: center;
@@ -103,6 +107,41 @@ body {
   min-width: 20px;
   min-height: 20px;
   padding: 22px 12px;
+}
+
+.search-icon {
+  background-image: url(../images/icons/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.favorites-icon {
+  position: relative;
+  background-image: url(../images/icons/heart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.user-menu-link-icon {
+  text-decoration: none;
+}
+
+.favorites-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20px;
+  min-height: 20px;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 50%;
+
 }
 
 .user-menu-button {
