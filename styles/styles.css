@@ -93,7 +93,17 @@ body {
 }
 
 .navigation-link-active {
-  border-bottom: 2px solid #756257;
+  position: relative;
+}
+
+.navigation-link-active::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color: #756257;
 }
 
 .user-menu-list {
@@ -157,6 +167,19 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+}
+
+.user-menu-button:hover {
+  background-color: #615048;
+}
+
+.user-menu-button:focus {
+  background-color: #615048;
+}
+
+.user-menu-button:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
 }
 
 .hero {
@@ -395,6 +418,41 @@ body {
   padding: 40px 70px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 47px;
+  min-height: 40px;
+}
+
+.social-icon {
+  fill: #83B3D3;
+}
+
+.social-link:hover
+.social-icon {
+  fill: #68A2CA;
+}
+
+.social-link:focus
+.social-icon {
+  fill: #68A2CA;
+}
+
+.social-link:active
+.social-icon {
+  fill: #68A2CA4D;
 }
 
 .phone-link {
@@ -402,6 +460,35 @@ body {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+}
+
+.phone-link:hover {
+  color: #756157;
+}
+
+.phone-link:focus {
+  color: #756157;
+}
+
+.phone-link:active {
+  color: #7561574D;
+}
+
+.developer-link {
+  display: block;
+  fill: #000000;
+}
+
+.developer-link:hover {
+  fill: #756157;
+}
+
+.developer-link:focus {
+  fill: #756157;
+}
+
+.developer-link:active {
+  fill: #7561574D;
 }
 
 .catalog-filter {
