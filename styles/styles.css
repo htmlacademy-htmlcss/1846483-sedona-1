@@ -183,6 +183,7 @@ body {
 }
 
 .hero {
+  min-height: 485px;
   background-image: url(../images/background/hero-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -193,6 +194,15 @@ body {
   margin: 0 auto;
   padding-top: 51px;
   padding-bottom: 25px;
+}
+
+.hero::after {
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  content: "";
+  background-image: url(../images/divider.svg);
+  background-repeat: no-repeat;
 }
 
 .main-title {
