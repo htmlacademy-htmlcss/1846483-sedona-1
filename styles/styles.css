@@ -206,6 +206,7 @@ body {
 }
 
 .main-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -214,6 +215,7 @@ body {
 }
 
 .main-description {
+  margin: 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -308,18 +310,14 @@ body {
 .comfort-main-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  gap: 20px;
+  padding: 64px 0;
 }
 
 .main-comfort-title {
   max-width: 505px;
   text-align: center;
-  margin: 64px auto 20px;
-}
-
-.main-comfort-description {
-  margin: 0 auto 64px;
 }
 
 .comfort-list {
@@ -333,7 +331,11 @@ body {
 }
 
 .comfort-container {
-  max-width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   text-align: center;
 }
 
@@ -342,10 +344,39 @@ body {
 }
 
 .comfort-title {
+  margin: 0;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.comfort-description {
+  margin: 0;
+}
+
+.comfort-icon-house {
+  min-width: 75px;
+  min-height: 72px;
+  background-image: url(../images/icons/housing-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.comfort-icon-eat {
+  min-width: 75px;
+  min-height: 72px;
+  background-image: url(../images/icons/eating-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.comfort-icon-souvenir {
+  min-width: 75px;
+  min-height: 72px;
+  background-image: url(../images/icons/souvenir-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .search-wrapper {
