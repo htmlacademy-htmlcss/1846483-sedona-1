@@ -244,7 +244,8 @@ body {
   min-height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
   text-align: center;
 }
 
@@ -289,6 +290,19 @@ body {
 .advantages-item
 .advantages-title {
   color: #000000;
+}
+
+.advantages-title-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.advantages-item-image
+.advantages-title-divider {
+  background-color: #ffffff;
+  opacity: 0.3;
 }
 
 .comfort-main-wrapper {
