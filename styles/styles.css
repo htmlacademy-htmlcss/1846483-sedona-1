@@ -730,11 +730,12 @@ body {
 
 .catalog-item {
   box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid #E6E6E6;
+  padding: 20px;  
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .catalog-item
@@ -775,10 +776,23 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  background-color: #756157;
   text-transform: uppercase;
   text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.catalog-item-link:hover {
+  background-color: #615048;
+}
+
+.catalog-item-link:focus {
+  background-color: #615048;
+}
+
+.catalog-item-link:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
 }
 
 .catalog-item-add-favorites {
@@ -787,10 +801,23 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #82B3D3;
-  text-transform: uppercase;
   border: none;
+}
+
+.catalog-item-add-favorites:hover {
+  background-color: #68A2CA;
+}
+
+.catalog-item-add-favorites:focus {
+  background-color: #68A2CA;
+}
+
+.catalog-item-add-favorites:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
 }
 
 .catalog-item-remove-favorites {
@@ -799,10 +826,23 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #7DB54F;
-  text-transform: uppercase;
   border: none;
+}
+
+.catalog-item-remove-favorites:hover {
+  background-color: #6C9E42;
+}
+
+.catalog-item-remove-favorites:focus {
+  background-color: #6C9E42;
+}
+
+.catalog-item-remove-favorites:active {
+  background-color: #7DB54F;
+  color: #FFFFFF4D;
 }
 
 .catalog-item-rating {
@@ -811,6 +851,21 @@ p {
   line-height: 20px;
   text-transform: uppercase;
   background-color: #F2F2F2;
+}
+
+.catalog-item-stars-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.stars-list-item {
+  min-width: 18px;
+  min-height: 17px;
+  background-image: url(../images/icons/star-icon.svg);
+  background-repeat: no-repeat;
 }
 
 .catalog-divider {
