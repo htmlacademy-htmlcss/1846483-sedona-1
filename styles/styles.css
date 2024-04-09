@@ -786,7 +786,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 20px;
+  gap: 18px;
 }
 
 .catalog-item {
