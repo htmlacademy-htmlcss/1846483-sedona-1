@@ -172,6 +172,7 @@ body {
 
 .user-menu-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .user-menu-button:active {
@@ -411,6 +412,7 @@ body {
 
 .search-link:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .search-link:active {
@@ -430,7 +432,7 @@ body {
 }
 
 .subscribe-main-wrapper {
-  max-width: 475px;  
+  max-width: 475px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -482,15 +484,22 @@ body {
 
 .subscribe-form-submit-button:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .subscribe-form-submit-button:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .subscribe-form-submit-button:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
+}
+
+.subscribe-form-submit-button:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .footer-wrapper {
@@ -527,6 +536,7 @@ body {
 .social-link:focus
 .social-icon {
   fill: #68A2CA;
+  outline: none;
 }
 
 .social-link:active
@@ -547,6 +557,7 @@ body {
 
 .phone-link:focus {
   color: #756157;
+  outline: none;
 }
 
 .phone-link:active {
@@ -564,6 +575,7 @@ body {
 
 .developer-link:focus {
   fill: #756157;
+  outline: none;
 }
 
 .developer-link:active {
@@ -694,7 +706,8 @@ body {
 
 .catalog-sort-by-list {
   min-width: 292px;
-  padding-left: 20px;
+  padding: 12px 20px;
+  padding-right: 40px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -702,18 +715,29 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   box-sizing: border-box;
+  appearance: none;
+  background-image: url(../images/icons/arrow-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .catalog-sort-by-list:hover {
   border-color: #68A2CA;
+  cursor: pointer;
 }
 
 .catalog-sort-by-list:focus {
   border-color: #68A2CA;
+  outline: none;
 }
 
 .catalog-sort-by-list:active {
   border-color: #3F5E72;
+}
+
+.catalog-sort-by-list:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .catalog-sort-by-item {
@@ -738,7 +762,7 @@ body {
   background-color: transparent;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .catalog-view-item {
@@ -747,10 +771,12 @@ body {
 
 .view-item-button:hover {
   border-color: #000000;
+  cursor: pointer;
 }
 
 .view-item-button:focus {
   border-color: #68A2CA;
+  outline: none;
 }
 
 .view-item-button:active {
@@ -790,7 +816,7 @@ body {
 }
 
 .catalog-item {
-  padding: 20px;  
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -845,15 +871,22 @@ p {
 
 .catalog-item-link:hover {
   background-color: #615048;
+  cursor: pointer;
 }
 
 .catalog-item-link:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .catalog-item-link:active {
   background-color: #756157;
   color: #FFFFFF4D;
+}
+
+.catalog-item-link:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .catalog-item-add-favorites {
@@ -870,15 +903,22 @@ p {
 
 .catalog-item-add-favorites:hover {
   background-color: #68A2CA;
+  cursor: pointer;
 }
 
 .catalog-item-add-favorites:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .catalog-item-add-favorites:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
+}
+
+.catalog-item-add-favorites:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .catalog-item-remove-favorites {
@@ -895,15 +935,22 @@ p {
 
 .catalog-item-remove-favorites:hover {
   background-color: #6C9E42;
+  cursor: pointer;
 }
 
 .catalog-item-remove-favorites:focus {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .catalog-item-remove-favorites:active {
   background-color: #7DB54F;
   color: #FFFFFF4D;
+}
+
+.catalog-item-remove-favorites:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .catalog-item-rating {
@@ -977,11 +1024,13 @@ p {
 .pagination-item-page:hover:not(.pagination-item-active) {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
+  cursor: pointer;
 }
 
 .pagination-item-page:focus:not(.pagination-item-active) {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
+  outline: none;
 }
 
 .pagination-item-page:active:not(.pagination-item-active) {
