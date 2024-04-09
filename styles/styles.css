@@ -613,7 +613,13 @@ body {
   padding: 0;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
 .breadcrumbs-link {
+  display: block;
+  padding-left: 17px;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
@@ -623,6 +629,32 @@ body {
   display: block;
   min-width: 12px;
   min-height: 12px;
+  background-image: url(../images/icons/home-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .breadcrumbs-list:nth-child(1n+1)::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 10px;
+  background-image: url(../images/icons/breadcrumbs-divider.svg);
+  background-repeat: no-repeat;
+} */
+
+.breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  /* display: inline-block;
+  margin: 0;
+  padding: 0; */
+  position: absolute;
+  top: 5.5px;
+  width: 7px;
+  height: 10px;
+  background-image: url(../images/icons/breadcrumbs-divider.svg);
+  background-repeat: no-repeat;
+  /* background-position: left center; */
 }
 
 .filter-title {
