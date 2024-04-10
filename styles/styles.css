@@ -596,6 +596,7 @@ body {
 
 .catalog-filter-form-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog-title {
@@ -627,6 +628,7 @@ body {
 
 .breadcrumbs-link:hover {
   color: #FFFFFF99;
+  cursor: pointer;
 }
 
 .breadcrumbs-link:focus {
@@ -656,20 +658,78 @@ body {
   background-repeat: no-repeat;
 }
 
-.filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+.filter-container-left-wrapper,
+.filter-container-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
 }
 
-.filter-item {
-  line-height: 23px;
+.infrastructure-filter,
+.type-of-housing-filter {
+  min-width: 150px;
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-filter-list,
 .type-of-housing-filter-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter-title {
+  padding: 0;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  line-height: 23px;
+}
+
+.price-filter-wrapper {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+.price-filter {
+  min-width: 288px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-filter-input-from,
+.price-filter-input-to {
+  max-width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.price-filter-placeholder-from,
+.price-filter-placeholder-to {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  height: 24px;
+  color: #000000;
 }
 
 .filter-form-button-submit {
@@ -681,6 +741,27 @@ body {
   background-color: #82B3D3;
   text-transform: uppercase;
   border: none;
+  border-radius: 4px;
+}
+
+.filter-form-button-submit:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.filter-form-button-submit:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.filter-form-button-submit:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+}
+
+.filter-form-button-submit:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .filter-form-button-reset {
@@ -692,6 +773,27 @@ body {
   background-color: #00000000;
   text-transform: uppercase;
   border: none;
+}
+
+.filter-form-button-reset:hover {
+  color: #ffffff99;
+  cursor: pointer;
+}
+
+.filter-form-button-reset:focus {
+  color: #ffffff;
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter-form-button-reset:active {
+  color: #ffffff4D;
+  outline: none;
+}
+
+.filter-form-button-reset:disabled {
+  color: #ffffff1A;
+  outline: none;
 }
 
 .buttons-container-wrapper {
