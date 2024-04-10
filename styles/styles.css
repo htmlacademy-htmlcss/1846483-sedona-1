@@ -625,6 +625,18 @@ body {
   text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+  color: #FFFFFF99;
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+  color: #FFFFFF4D;
+}
+
 .breadcrumbs-item-home {
   display: block;
   min-width: 12px;
