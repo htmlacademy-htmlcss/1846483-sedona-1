@@ -121,15 +121,24 @@
                   <div class="price-filter-wrapper">
                     <div class="input-wrapper">
                       <label class="price-filter-placeholder-from" for="price-from">от</label>
-                      <input class="price-filter-input-from" type="number" name="price-from" id="price-from" min="0">
+                      <input class="price-input price-filter-input-from" type="number" name="price-from" id="price-from" min="0">
                     </div>
 
                     <div class="input-wrapper">
-                    <label class="price-filter-placeholder-to" for="price-up-to">до</label>
-                    <input class="price-filter-input-to" type="number" name="price-up-to" id="price-up-to" max="9000">
+                      <label class="price-filter-placeholder-to" for="price-up-to">до</label>
+                      <input class="price-input price-filter-input-to" type="number" name="price-up-to" id="price-up-to" max="9000">
                     </div>
                 </div>
-                  <input class="price-filter-range" type="range" min="0" max="9000" step="1" value="50">
+                  <div class="range-container">
+                    <div class="range-bar" style="left: 0; width: 207px">
+                      <button class="range-toggle range-toggle-min" type="button" style="left: 0;">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle range-toggle-max" type="button" style="left: 207px;">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="buttons-container-wrapper">
                   <div class="buttons-container">
