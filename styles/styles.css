@@ -472,6 +472,11 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.subscribe-form-input:disabled {
+  background-color: #000000;
+  opacity: 0.5;
+}
+
 .subscribe-form-submit-button {
   display: inline-block;
   padding: 8px 50px;
@@ -755,6 +760,12 @@ body {
   opacity: 0.3;
 }
 
+.control-input:disabled ~ .control-label,
+.control-input:disabled ~ .control-mark,
+.control-input:disabled ~ .control-radio{
+  opacity: 0.3;
+}
+
 .price-filter-wrapper {
   display: flex;
   gap: 2px;
@@ -808,6 +819,11 @@ body {
 
 .price-input:active {
   outline: 2px solid #000000;
+}
+
+.price-input:disabled {
+  background-color: #000000;
+  opacity: 0.5;
 }
 
 .input-wrapper {
