@@ -424,6 +424,89 @@ body {
   color: #FFFFFF4D;
 }
 
+.search-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #F2F2F2CC;
+}
+
+.modal-wrapper {
+  padding: 64px 70px;
+  display: block;
+  background-color: #FFFFFF;
+  box-shadow: 0 25px 50px 0 #00000026;
+}
+
+.modal-close-button {
+  padding: 0;
+  margin: 0;
+  min-width: 52px;
+  min-height: 52px;
+  background-color: #F2F2F2;
+  background-image: url(../images/icons/cross-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.search-modal-input {
+  margin: 0;
+  padding: 0;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.search-modal-form {
+  display: grid;
+  grid-template-columns: 137px 110px 88px 131px 110px;
+  align-items: center;
+  row-gap: 48px;
+}
+
+.check-in-date-input,
+.check-out-date-input {
+  grid-column: 2 / -1;
+  padding: 12px 20px;
+  padding-right: 60px;
+}
+
+.children-label {
+  grid-column: 4 / -2;
+}
+
+.adults-input-wrapper {
+  display: flex;
+}
+
+.modal-button-icon {
+  margin: 0;
+  padding: 0;
+  min-width: 40px;
+  min-height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.adults-input {
+  width: 31px;
+}
+
+.button-minus {
+  background-image: url(../images/icons/minus-icon.svg);
+}
+
+.button-plus {
+  background-image: url(../images/icons/plus-icon.svg);
+}
+
 .subscribe-background-image {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: auto;
