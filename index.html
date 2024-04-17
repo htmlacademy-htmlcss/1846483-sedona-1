@@ -138,7 +138,7 @@
           </div>
         </section>
 
-        <div class="modal">
+        <div class="modal modal-closed">
           <div class="search-modal-container">
             <div class="modal-wrapper">
               <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
@@ -148,21 +148,23 @@
               <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="search-modal-label check-in-date-label" for="check-in-date">Дата заезда:</label>
                 <div class="search-modal-input-wrapper">
-                  <input class="search-modal-input check-in-date-input" id="check-in-date" name="check-in-date" type="text" value="27 апреля 2020">
+                  <input class="search-modal-input check-in-date-input search-modal-input-condition" id="check-in-date" name="check-in-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
                   <p class="check-valid-message error-message">Мы не можем отправить вас в прошлое.</p>
                 </div>
                 <label class="search-modal-label check-out-date-label" for="check-out-date">Дата выезда:</label>
                 <div class="search-modal-input-wrapper">
-                  <input class="search-modal-input check-out-date-input" id="check-out-date" name="check-out-date" type="text" value="1 сентября 2023">
+                  <input class="search-modal-input check-out-date-input search-modal-input-condition" id="check-out-date" name="check-out-date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
                   <p class="check-valid-message">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
                 <label class="search-modal-label adults-label" for="adults">Взрослые:</label>
                 <div class="adults-input-wrapper">
                   <button class="modal-button-icon button-minus-icon" type="button">
+                    <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill=""><path fill="" d="M.4 0v2h14V0H.4Z"/></svg>
                     <p class="visually-hidden">Уменьшить количество взрослых.</p>
                   </button>
                   <input class="search-modal-input adults-input number-input" id="adults" name="adults-count" type="number" value="2">
                   <button class="modal-button-icon button-plus-icon" type="button">
+                    <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill=""><path fill="" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                     <p class="visually-hidden">Увеличить количество взрослых.</p>
                   </button>
                 </div>
@@ -177,10 +179,12 @@
                 </div>
                 <div class="children-input-wrapper">
                   <button class="modal-button-icon button-minus-icon" type="button">
+                    <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill=""><path fill="" d="M.4 0v2h14V0H.4Z"/></svg>
                     <p class="visually-hidden">Уменьшить количество детей.</p>
                   </button>
                   <input class="search-modal-input children-input number-input" id="children" name="children-count" type="number" value="2">
                   <button class="modal-button-icon button-plus-icon" type="button">
+                    <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill=""><path fill="" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
                     <p class="visually-hidden">Увеличить количество детей.</p>
                   </button>
                 </div>

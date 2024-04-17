@@ -436,6 +436,10 @@ body {
   background: #F2F2F2CC;
 }
 
+.modal-closed {
+  display: none;
+}
+
 .search-modal-container {
   padding: 64px 70px;
   display: block;
@@ -481,8 +485,6 @@ body {
   outline: none;
 }
 
-
-
 .search-modal-input {
   margin: 0;
   padding: 0;
@@ -514,6 +516,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -544,6 +547,19 @@ body {
   background-position: center right 20px;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.search-modal-input-condition:hover {
+  background-color: #E6E6E6;
+}
+
+.search-modal-input-condition:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.search-modal-input-condition:not(:placeholder-shown):active {
+  outline: 2px solid #000000;
 }
 
 .children-label-wrapper {
@@ -580,7 +596,6 @@ body {
   margin-left: 13px;
   padding: 15px 18px;
   padding-left: 22px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -620,13 +635,22 @@ body {
 
 .modal-button-icon {
   margin: 0;
-  padding: 0;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 40px;
   min-height: 48px;
   background-color: #F2F2F2;
-  background-repeat: no-repeat;
-  background-position: center;
   border: none;
+}
+
+.count-button-container {
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  fill: #7561574D;
+  box-sizing: border-box;
 }
 
 .adults-input,
@@ -638,18 +662,38 @@ body {
 }
 
 .button-minus-icon {
-  background-image: url(../images/icons/minus-icon.svg);
   border-radius: 4px 0 0 4px;
 }
 
 .button-plus-icon {
-  background-image: url(../images/icons/plus-icon.svg);
   border-radius: 0 4px 4px 0;
 }
 
-.modal-button-icon:hover {
+.modal-button-icon:hover .count-button-container {
   fill: #000000;
   cursor: pointer;
+}
+
+.modal-button-icon:focus,
+.adults-input:focus,
+.children-input:focus {
+  outline: none;
+}
+
+.modal-button-icon:focus .count-button-container {
+  fill: #000000;
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.modal-button-icon:active .count-button-container {
+  fill: #00000033;
+  outline: none;
+}
+
+.search-modal-input:disabled {
+  background-color: #E5E5E5;
+  color: #ffffff;
 }
 
 .search-form-button-submit {
@@ -661,7 +705,7 @@ body {
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #82B3D3;
+  background-color: #83B3D3;
   border: none;
   border-radius: 10px;
 }
@@ -677,7 +721,7 @@ body {
 }
 
 .search-form-button-submit:active {
-  background-color: #82B3D3;
+  background-color: #68A2CA;
   color: #FFFFFF4D;
 }
 
