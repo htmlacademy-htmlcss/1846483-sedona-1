@@ -147,22 +147,28 @@
               </button>
               <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="search-modal-label check-in-date-label" for="check-in-date">Дата заезда:</label>
-                <input class="search-modal-input check-in-date-input" id="check-in-date" name="check-in-date" type="date">
+                <div class="search-modal-input-wrapper">
+                  <input class="search-modal-input check-in-date-input" id="check-in-date" name="check-in-date" type="text" value="27 апреля 2020">
+                  <p class="check-valid-message error-message">Мы не можем отправить вас в прошлое.</p>
+                </div>
                 <label class="search-modal-label check-out-date-label" for="check-out-date">Дата выезда:</label>
-                <input class="search-modal-input check-out-date-input" id="check-out-date" name="check-out-date" type="date">
+                <div class="search-modal-input-wrapper">
+                  <input class="search-modal-input check-out-date-input" id="check-out-date" name="check-out-date" type="text" value="1 сентября 2023">
+                  <p class="check-valid-message">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
                 <label class="search-modal-label adults-label" for="adults">Взрослые:</label>
                 <div class="adults-input-wrapper">
                   <button class="modal-button-icon button-minus-icon" type="button">
                     <p class="visually-hidden">Уменьшить количество взрослых.</p>
                   </button>
-                  <input class="search-modal-input adults-input" id="adults" name="adults-count" type="number">
+                  <input class="search-modal-input adults-input number-input" id="adults" name="adults-count" type="number" value="2">
                   <button class="modal-button-icon button-plus-icon" type="button">
                     <p class="visually-hidden">Увеличить количество взрослых.</p>
                   </button>
                 </div>
                 <div class="children-label-wrapper">
                   <label class="search-modal-label children-label" for="children">Дети:</label>
-                  <button class="search-form-info info-icon">
+                  <button class="search-form-info info-icon" type="button">
                     <p class="visually-hidden">Дополнительная информация.</p>
                     <p class="tooltip-info">
                       Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -173,7 +179,7 @@
                   <button class="modal-button-icon button-minus-icon" type="button">
                     <p class="visually-hidden">Уменьшить количество детей.</p>
                   </button>
-                  <input class="search-modal-input children-input" id="children" name="children-count" type="number">
+                  <input class="search-modal-input children-input number-input" id="children" name="children-count" type="number" value="2">
                   <button class="modal-button-icon button-plus-icon" type="button">
                     <p class="visually-hidden">Увеличить количество детей.</p>
                   </button>

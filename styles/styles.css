@@ -465,9 +465,31 @@ body {
   border: none;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+
+
 .search-modal-input {
   margin: 0;
   padding: 0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   background-color: #F2F2F2;
   border: none;
 }
@@ -495,12 +517,33 @@ body {
   text-transform: capitalize;
 }
 
+.search-modal-input-wrapper {
+  position: relative;
+  grid-column: 2 / -1;
+}
+
+.check-valid-message {
+  position: absolute;
+  margin: 0;
+  margin-top: 4px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #FF5757;
+}
+
 .check-in-date-input,
 .check-out-date-input {
-  grid-column: 2 / -1;
+  width: 100%;
   padding: 12px 20px;
   padding-right: 60px;
+  background-image: url(../images/icons/date-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .children-label-wrapper {
@@ -588,7 +631,10 @@ body {
 
 .adults-input,
 .children-input {
-  width: 31px;
+  max-width: 31px;
+  padding: 14px 10px;
+  line-height: 20px;
+  box-sizing: border-box;
 }
 
 .button-minus-icon {
@@ -599,6 +645,11 @@ body {
 .button-plus-icon {
   background-image: url(../images/icons/plus-icon.svg);
   border-radius: 0 4px 4px 0;
+}
+
+.modal-button-icon:hover {
+  fill: #000000;
+  cursor: pointer;
 }
 
 .search-form-button-submit {
@@ -1014,8 +1065,8 @@ body {
   border-radius: 0 4px 4px 0;;
 }
 
-.price-input::-webkit-outer-spin-button,
-.price-input::-webkit-inner-spin-button {
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
