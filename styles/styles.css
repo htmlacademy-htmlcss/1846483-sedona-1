@@ -16,10 +16,12 @@
 
 html {
   height: 100%;
+  background-color: #F2F2F2;
 }
 
 body {
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -29,6 +31,7 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 #00000033;
 }
 
 .visually-hidden {
@@ -433,7 +436,7 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  background: #F2F2F2CC;
+  background-color: #F2F2F2CC;
 }
 
 .modal-closed {
@@ -441,6 +444,8 @@ body {
 }
 
 .search-modal-container {
+  position: relative;
+  width: 577px;
   padding: 64px 70px;
   display: block;
   background-color: #FFFFFF;
@@ -448,15 +453,10 @@ body {
   box-shadow: 0 25px 50px 0 #00000026;
 }
 
-.modal-wrapper {
-  position: relative;
-  min-width: 577px;
-}
-
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: -18px;
+  top: 64px;
+  right: 52px;
   padding: 0;
   margin: 0;
   min-width: 52px;
@@ -563,6 +563,7 @@ body {
 }
 
 .children-label-wrapper {
+  position: relative;
   grid-column: 3 / 4;
   justify-self: end;
   display: flex;
@@ -592,8 +593,9 @@ body {
   display: none;
   box-sizing: border-box;
   min-width: 256px;
-  margin-top: 28px;
-  margin-left: 13px;
+  margin: 0;
+  margin-top: 41px;
+  margin-left: -56px;
   padding: 15px 18px;
   padding-left: 22px;
   font-weight: 400;
@@ -603,7 +605,6 @@ body {
   background-color: #333333;
   box-shadow: 0 15px 30px 0 #0000004D;
   border-radius: 10px;
-  transform: translateX(-50%);
 }
 
 .tooltip-info::before {
@@ -618,8 +619,8 @@ body {
   content: "";
 }
 
-.search-form-info:hover .tooltip-info,
-.search-form-info:focus .tooltip-info {
+.search-form-info:hover ~ .tooltip-info,
+.search-form-info:focus ~ .tooltip-info {
   display: block;
   cursor: pointer;
 }
@@ -1005,71 +1006,57 @@ body {
 }
 
 .filter-item {
+  position: relative;
+  padding-left: 36px;
   line-height: 23px;
 }
 
-.control {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.control-mark {
-  position: relative;
+.control-label::before {
+  position: absolute;
+  margin: 1.5px 0;
+  left: 0;
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
+  content: "";
+}
+
+.control-label-checkbox::before {
   border-radius: 4px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
-  width: 12px;
-  height: 10px;
-  top: 6px;
-  left: 4px;
+.control-input[type="checkbox"]:checked + .control-label-checkbox::before {
   background-image: url(../images/icons/checkbox-icon.svg);
   background-repeat: no-repeat;
-  content: "";
+  background-position: 4px 6px;
 }
 
-.control-radio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  background-color: #FFFFFF;
+.control-label-radio::before {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-radio::before {
-  width: 10px;
-  height: 10px;
-  display: block;
-  background-color: #3F5E72;
-  border-radius: 50%;
-  content: "";
+.control-input[type="radio"]:checked + .control-label-radio::before {
+  background-image: url(../images/icons/bullet-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.control:hover {
+.control-label:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.control-input:focus ~ .control-mark,
-.control-input:focus ~ .control-radio {
+.control-input:focus ~ .control-label::before {
   outline: 3px solid #83B3D3;
 }
 
-.control:active {
+.control-label:active {
   opacity: 0.3;
 }
 
-.control-input:disabled ~ .control-label,
-.control-input:disabled ~ .control-mark,
-.control-input:disabled ~ .control-radio{
-  opacity: 0.3;
+.control-input:disabled ~ .control-label {
+  opacity: 0.1;
+  cursor: default;
 }
 
 .price-filter-wrapper {
@@ -1157,6 +1144,8 @@ body {
 
 .range-bar {
   position: absolute;
+  left: 0;
+  width: 207px;
   height: 4px;
   background-color: #FFFFFF;
 }
@@ -1168,6 +1157,14 @@ body {
   border-radius: 5px;
   border: none;
   transform: translateY(-8px);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 207px;
 }
 
 .range-toggle:hover {
