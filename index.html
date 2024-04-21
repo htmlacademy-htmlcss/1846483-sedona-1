@@ -140,12 +140,11 @@
 
         <div class="modal modal-closed">
           <div class="search-modal-container">
-            <div class="modal-wrapper">
               <h2 class="modal-header">Поиск гостиницы в Седоне</h2>
               <button class="modal-close-button" type="button">
                 <span class="visually-hidden">Закрыть модальное окно.</span>
               </button>
-              <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="search-modal-label check-in-date-label" for="check-in-date">Дата заезда:</label>
                 <div class="search-modal-input-wrapper">
                   <input class="search-modal-input check-in-date-input search-modal-input-condition" id="check-in-date" name="check-in-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
@@ -172,10 +171,8 @@
                   <label class="search-modal-label children-label" for="children">Дети:</label>
                   <button class="search-form-info info-icon" type="button">
                     <p class="visually-hidden">Дополнительная информация.</p>
-                    <p class="tooltip-info">
-                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                    </p>
                   </button>
+                  <p class="tooltip-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 </div>
                 <div class="children-input-wrapper">
                   <button class="modal-button-icon button-minus-icon" type="button">
@@ -190,7 +187,6 @@
                 </div>
                 <button class="search-form-button-submit" type="submit">Найти</button>
               </form>
-            </div>
           </div>
         </div>
 
