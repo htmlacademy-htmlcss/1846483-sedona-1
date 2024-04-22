@@ -69,7 +69,7 @@ body {
 }
 
 .header-logo-link {
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .navigation {
@@ -211,39 +211,37 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .main-description {
   margin: 0;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .advantages-main-wrapper {
+  padding: 69px 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 
-.main-advantages-title {
-  max-width: 620px;
-  margin: 69px auto 25px;
-  text-align: center;
-}
-
-.main-advantages-description {
-  margin: 0 auto 69px;
+.advantages-image-wrapper {
+  padding: 102px 85px;
 }
 
 .advantages-wrapper {
-  padding: 102px 85px;
+  padding: 112.5px 85px;
 }
 
 .advantages-container {
   position: relative;
   max-width: 230px;
-  min-height: 180px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   gap: 62px;
@@ -261,7 +259,7 @@ body {
 
 .advantages-title {
   margin: 0;
-  padding: 0 27px;
+  padding: 0 29px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -310,6 +308,10 @@ body {
   background-color: #ffffff;
 }
 
+.advantages-item {
+  min-height: 385px;
+}
+
 .comfort-main-wrapper {
   display: flex;
   flex-direction: column;
@@ -327,7 +329,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 400px);
 }
 
 .comfort-item {
@@ -336,6 +338,7 @@ body {
 }
 
 .comfort-container {
+  max-width: 230px;
   display: flex;
   flex-direction: column;
   justify-content: center;
