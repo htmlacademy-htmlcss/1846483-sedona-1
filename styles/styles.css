@@ -150,7 +150,6 @@ body {
   color: #ffffff;
   background-color: #7DB54F;
   border-radius: 50%;
-
 }
 
 .user-menu-button {
@@ -579,6 +578,7 @@ body {
 
 .search-form-info {
   padding: 0;
+  margin-right: 11px;
   min-width: 26px;
   min-height: 26px;
   text-align: left;
@@ -589,7 +589,6 @@ body {
 }
 
 .info-icon {
-  margin-right: 10px;
   background-image: url(../images/icons/info-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -600,10 +599,11 @@ body {
   display: none;
   box-sizing: border-box;
   min-width: 256px;
+  min-height: 143px;
   margin: 0;
-  margin-top: 41px;
-  margin-left: -56px;
-  padding: 15px 18px;
+  margin-top: 42px;
+  margin-left: -57px;
+  padding: 20px 18px 18px 25px;
   padding-left: 22px;
   font-weight: 400;
   font-size: 16px;
@@ -614,9 +614,14 @@ body {
   border-radius: 10px;
 }
 
+.tooltip-info p {
+  display: inline;
+  vertical-align: middle;
+}
+
 .tooltip-info::before {
   position: absolute;
-  top: -8px;
+  top: -9px;
   margin-left: -10px;
   left: 50%;
   width: 19px;
@@ -742,11 +747,12 @@ body {
   background-image: url(../images/background/subscribe-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
-
 }
 
 .subscribe {
+  min-height: 415px;
   padding: 96px 258px 104px;
+  box-sizing: border-box;
 }
 
 .subscribe-main-wrapper {
