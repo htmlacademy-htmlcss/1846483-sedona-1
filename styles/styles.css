@@ -60,7 +60,6 @@ body {
 
 .page-header {
   display: flex;
-  max-height: 64px;
 }
 
 .page-wrapper {
@@ -69,7 +68,8 @@ body {
 }
 
 .header-logo-link {
-  margin-right: 28px;
+  position: absolute;
+  display: block;
 }
 
 .navigation {
@@ -81,6 +81,7 @@ body {
 .navigation-list {
   padding: 0;
   margin: 0;
+  margin-left: 168px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -110,7 +111,10 @@ body {
 }
 
 .user-menu-list {
+  min-height: 64px;
+  max-width: 268px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -274,6 +278,11 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-image {
+  height: 100%;
+  object-fit: contain;
+}
+
 .advantages-item-image-reverse {
   flex-direction: row-reverse;
 }
@@ -293,7 +302,7 @@ body {
 
 .advantages-description::before {
   position: absolute;
-  top: 86px;
+  margin-top: -32px;
   left: 85px;
   width: 60px;
   height: 2px;
@@ -322,6 +331,10 @@ body {
 .main-comfort-title {
   max-width: 505px;
   text-align: center;
+}
+
+.main-comfort-description {
+  padding: 0 50px;
 }
 
 .comfort-list {
@@ -744,8 +757,9 @@ body {
 }
 
 .subscribe-background-image {
+  background-color: #000000;
   background-image: url(../images/background/subscribe-background.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -845,6 +859,7 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  max-width: 150px;
   padding: 0;
   margin: 0;
 }
@@ -878,6 +893,8 @@ body {
 }
 
 .phone-link {
+  display: block;
+  max-width: 720px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -921,7 +938,7 @@ body {
   gap: 40px;
   padding: 35px 70px 70px;
   background-image: url(../images/background/filter-background.jpg);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #000000;
@@ -1319,10 +1336,13 @@ body {
 
 .sorting-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .catalog-sort-by-list {
   min-width: 292px;
+  max-width: 500px;
+  height: 100%;
   padding: 12px 18px;
   padding-right: 40px;
   font-family: inherit;
@@ -1365,7 +1385,9 @@ body {
   margin: 0;
   margin-left: 70px;
   padding: 0;
+  max-width: 200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
   gap: 8px;
@@ -1610,6 +1632,7 @@ p {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
