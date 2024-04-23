@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -52,12 +54,12 @@
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="advantages-main-wrapper">
-            <p class="main-title main-advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="main-description main-advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <p class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
           <ul class="advantages-list list-reset">
             <li class="advantages-item-image">
-              <div class="advantages-wrapper">
+              <div class="advantages-image-wrapper">
                 <div class="advantages-container">
                   <h3 class="advantages-title">Настоящий городок</h3>
                   <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -90,7 +92,7 @@
               </div>
             </li>
             <li class="advantages-item-image advantages-item-image-reverse">
-              <div class="advantages-wrapper">
+              <div class="advantages-image-wrapper">
                 <div class="advantages-container">
                   <h3 class="advantages-title">Там есть мост дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -111,19 +113,19 @@
             <li class="comfort-item">
               <div class="comfort-container">
                 <h3 class="comfort-title comfort-icon-house">Жильё</h3>
-                <p class="comfort-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="comfort-description">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
               </div>
             </li>
             <li class="comfort-item">
               <div class="comfort-container">
                 <h3 class="comfort-title comfort-icon-eat">Еда</h3>
-                <p class="comfort-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="comfort-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="comfort-item">
               <div class="comfort-container">
                 <h3 class="comfort-title comfort-icon-souvenir">Сувениры</h3>
-                <p class="comfort-description">Не только китайского, но и настоящего местного производства!</p>
+                <p class="comfort-description">Не только китайского,<br> но и настоящего местного производства!</p>
               </div>
             </li>
           </ul>
@@ -133,7 +135,7 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <div class="search-wrapper">
             <p class="main-title main-search-title">Заинтересовались?</p>
-            <p class="main-description main-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="main-description main-search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
           </div>
         </section>
@@ -147,42 +149,42 @@
               <form class="search-modal-form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="search-modal-label check-in-date-label" for="check-in-date">Дата заезда:</label>
                 <div class="search-modal-input-wrapper">
-                  <input class="search-modal-input check-in-date-input search-modal-input-condition" id="check-in-date" name="check-in-date" type="text" placeholder="Укажите дату" value="27 апреля 2020">
+                  <input class="search-modal-input check-in-date-input search-modal-input-condition" id="check-in-date" name="check-in-date" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
                   <p class="check-valid-message error-message">Мы не можем отправить вас в прошлое.</p>
                 </div>
                 <label class="search-modal-label check-out-date-label" for="check-out-date">Дата выезда:</label>
                 <div class="search-modal-input-wrapper">
-                  <input class="search-modal-input check-out-date-input search-modal-input-condition" id="check-out-date" name="check-out-date" type="text" placeholder="Укажите дату" value="1 сентября 2023">
+                  <input class="search-modal-input check-out-date-input search-modal-input-condition" id="check-out-date" name="check-out-date" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
                   <p class="check-valid-message">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
                 <label class="search-modal-label adults-label" for="adults">Взрослые:</label>
                 <div class="adults-input-wrapper">
+                  <p class="visually-hidden">Уменьшить количество взрослых.</p>
                   <button class="modal-button-icon button-minus-icon" type="button">
                     <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill=""><path fill="" d="M.4 0v2h14V0H.4Z"/></svg>
-                    <p class="visually-hidden">Уменьшить количество взрослых.</p>
                   </button>
-                  <input class="search-modal-input adults-input number-input" id="adults" name="adults-count" type="number" value="2">
+                  <input class="search-modal-input adults-input number-input" id="adults" name="adults-count" type="number" value="2" min="1" required>
+                  <p class="visually-hidden">Увеличить количество взрослых.</p>
                   <button class="modal-button-icon button-plus-icon" type="button">
                     <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill=""><path fill="" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
-                    <p class="visually-hidden">Увеличить количество взрослых.</p>
                   </button>
                 </div>
                 <div class="children-label-wrapper">
                   <label class="search-modal-label children-label" for="children">Дети:</label>
                   <button class="search-form-info info-icon" type="button">
-                    <p class="visually-hidden">Дополнительная информация.</p>
+                    <span class="visually-hidden">Дополнительная информация.</span>
                   </button>
                   <p class="tooltip-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
                 </div>
                 <div class="children-input-wrapper">
+                  <p class="visually-hidden">Уменьшить количество детей.</p>
                   <button class="modal-button-icon button-minus-icon" type="button">
                     <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill=""><path fill="" d="M.4 0v2h14V0H.4Z"/></svg>
-                    <p class="visually-hidden">Уменьшить количество детей.</p>
                   </button>
-                  <input class="search-modal-input children-input number-input" id="children" name="children-count" type="number" value="2">
+                  <p class="visually-hidden">Увеличить количество детей.</p>
+                  <input class="search-modal-input children-input number-input" id="children" name="children-count" type="number" value="2" min="0" required>
                   <button class="modal-button-icon button-plus-icon" type="button">
                     <svg class="count-button-container" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill=""><path fill="" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/></svg>
-                    <p class="visually-hidden">Увеличить количество детей.</p>
                   </button>
                 </div>
                 <button class="search-form-button-submit" type="submit">Найти</button>
@@ -224,7 +226,7 @@
             </li>
             <li class="social-item">
               <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18">
+                <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
                   <path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/>
                 </svg>
                 <span class="visually-hidden">Мы в YouTube</span>
@@ -234,7 +236,7 @@
           <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="developer-link" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Сайт разработчика</span>
-            <svg class="developer-link-icon" width="115" height="34" viewBox="0 0 115 34" xmlns="http://www.w3.org/2000/svg">
+            <svg class="developer-link-icon" width="115" height="33" viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.7232V16.3232H2.5V13.7232H0Z" />
               <path d="M11.6 5.32324C10 5.32324 8.8 6.02324 8 7.02324H7.9V0.823242H5.9V16.3232H7.9V11.0232C7.9 8.92324 9.2 7.42324 11.2 7.42324C13 7.42324 14.1 8.82324 14.1 10.6232V16.3232H16.1V10.2232C16.2 7.22324 14.3 5.32324 11.6 5.32324Z"/>
               <path d="M26.6 5.62324H21.8V1.92324H19.8V5.72324H17.9V7.72324H19.8V13.7232C19.8 15.4232 20.8 16.4232 22.5 16.4232H26.6V14.4232H22.9C22.2 14.4232 21.8 14.0232 21.8 13.3232V7.62324H26.6V5.62324Z"/>
