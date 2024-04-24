@@ -84,6 +84,7 @@ body {
   margin-left: 168px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 600px;
 }
 
 .navigation-link {
@@ -159,6 +160,7 @@ body {
 .user-menu-button {
   display: block;
   padding: 8px 34px;
+  max-width: 160px;
   margin-left: 20px;
   font-weight: 700;
   font-size: 16px;
@@ -168,6 +170,7 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .user-menu-button:hover {
@@ -281,7 +284,7 @@ body {
 
 .advantages-image {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .advantages-item-image-reverse {
@@ -959,6 +962,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   margin: 0;
@@ -1144,6 +1148,10 @@ body {
 .number-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.number-input {
+  -moz-appearance: textfield;
 }
 
 .price-input:hover {
@@ -1355,6 +1363,7 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   appearance: none;
+  background-color: inherit;
   background-image: url(../images/icons/arrow-icon.svg);
   background-repeat: no-repeat;
   background-position: right 18px center;
