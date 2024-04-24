@@ -186,6 +186,7 @@ body {
 
 .hero {
   min-height: 485px;
+  background-color: #000000;
   background-image: url(../images/background/hero-background.jpg);
   background-size: auto;
   background-repeat: no-repeat;
@@ -451,8 +452,6 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   width: 100%;
   background-color: #F2F2F2CC;
@@ -464,7 +463,10 @@ body {
 
 .search-modal-container {
   position: relative;
+  margin: 0 auto;
+  margin-top: 396px;
   width: 577px;
+  height: min-content;
   padding: 64px 70px;
   display: block;
   background-color: #FFFFFF;
