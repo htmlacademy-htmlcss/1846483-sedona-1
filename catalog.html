@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="page-header page-wrapper">
         <a class="header-logo-link" href="index.html">
-          <img class="header-logo" src="images/sedona-logo.png" width="140" height="70" alt="Логотип">
+          <img class="header-logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип">
         </a>
         <nav class="navigation">
           <ul class="navigation-list list-reset">
@@ -28,8 +28,9 @@
 
           <ul class="user-menu-list list-reset">
             <li class="user-menu-item">
-              <span class="visually-hidden">Поиск</span>
-              <a class="user-menu-link-icon search-icon" href="#"></a>
+              <a class="user-menu-link-icon search-icon" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
             </li>
             <li class="user-menu-item">
               <span class="visually-hidden">Избранное</span>
@@ -143,7 +144,7 @@
               <h2 class="visually-hidden">Сортировка гостиниц</h2>
               <p class="sorting-output">Найдено гостиниц: <span class="sorting-output-count">38</span></p>
               <div class="sorting-wrapper">
-                <select class="catalog-sort-by-list">
+                <select class="catalog-sort-by-list" aria-label="Сортировка">
                   <option class="catalog-sort-by-item">Сначала дешевые</option>
                   <option class="catalog-sort-by-item">Сначала популярные</option>
                   <option class="catalog-sort-by-item">Сначала дорогие</option>
